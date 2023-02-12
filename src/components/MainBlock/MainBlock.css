@@ -1,0 +1,46 @@
+.main-block__heading{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #141414;
+    margin-left: 260px;
+}
+
+.main-block__image-info__image{
+    width: 860px;
+    height: 480px;
+}
+
+.main-block__image-info{
+   display: flex;
+    gap: 125px;
+    margin-right: 335px;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.main-block__image-info__info h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #141414;
+}
+
+.main-block__image-info__info p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #141414;
+}
+
+.main-block__image-info__image.second-level{
+    width: 599px;
+    height: 411px;
+
+}
+
+.main-block__image-info__info.second-level{
+    margin-left: 260px;
+}

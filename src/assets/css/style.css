@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: "Orchidea Pro";
+    src:url(../fonts/OrchideaPro-Regular.ttf) format("ttf"),
+    url(../fonts/OrchideaPro-Regular.woff2) format("woff2")
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "Orchidea Pro";
+}
+
+
