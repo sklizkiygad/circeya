@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c267b15.css",
+    "main.js": "/static/js/main.a3d3022f.js",
+    "static/media/img1.png": "/static/media/img1.0f34f003432f53d86985.png",
+    "static/media/img3.png": "/static/media/img3.0a27f36aca303d589c11.png",
+    "static/media/img4.png": "/static/media/img4.dc19e25cd3b9dd59c325.png",
+    "static/media/img2.png": "/static/media/img2.9733c420ca7c63e289af.png",
+    "static/media/OrchideaPro-Regular.ttf": "/static/media/OrchideaPro-Regular.0e67fa619a6c6d67dfe7.ttf",
+    "static/media/OrchideaPro-Regular.woff2": "/static/media/OrchideaPro-Regular.9a1ce7866cd1efe4a270.woff2",
+    "index.html": "/index.html",
+    "main.8c267b15.css.map": "/static/css/main.8c267b15.css.map",
+    "main.a3d3022f.js.map": "/static/js/main.a3d3022f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c267b15.css",
+    "static/js/main.a3d3022f.js"
+  ]
+}
