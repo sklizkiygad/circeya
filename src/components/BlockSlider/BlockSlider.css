@@ -1,0 +1,29 @@
+
+.sticky-container__wrapper{
+    position: sticky;
+    top: 150px;
+    overflow: hidden;
+}
+.sticky-container{
+    display: flex;
+    gap: 10px;
+
+    overflow: hidden;
+    flex-wrap: nowrap;
+    transform: translateX(250px);
+
+}
+
+
+.sticky-container__item{
+    width: 320px;
+    height: 488px;
+    flex: 0 0 320px;
+}
+.sticky-container__item img{
+    width: 320px;
+    height: 488px;
+    flex: 0 0 320px;
+}
+
+

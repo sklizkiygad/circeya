@@ -59,19 +59,12 @@ export default function MySlider() {
         threshold:1
     }
     const callbackFunction=(entries)=>{
-
-
-
-
         if(entries[0].isIntersecting){
             setIsScrolling(true)
-            console.log('есть скролл')
             blockScroll()
+            scrollArea.current.classList.add('fullpage-swiper')
 
         }
-
-
-
     }
 
     useEffect(()=>{
@@ -81,6 +74,7 @@ export default function MySlider() {
 
     const lastSlide=()=>{
         setIsScrolling(false)
+        scrollArea.current.classList.remove('fullpage-swiper')
         allowScroll()
     }
 
