@@ -1,7 +1,7 @@
 
 .sticky-container__wrapper{
     position: sticky;
-    top: 150px;
+    top: 10%;
     overflow: hidden;
 }
 .sticky-container{

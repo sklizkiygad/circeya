@@ -35,10 +35,11 @@ const BlockSlider = () => {
     const handleScroll = () => {
 
 
-        if(window.pageYOffset >= windowYOffset && windowYOffset>0){
+        if(windowYOffset>0 && window.pageYOffset >= windowYOffset && window.pageYOffset <= windowYOffset+heightScrollArea ){
             scrollContainer.current.style.transform=`translateX(${1000-(window.pageYOffset-windowYOffset)}px)`
             console.log(scrollArea.current.style.transform=`translateX(${-(window.pageYOffset-windowYOffset)/1000})`)
         }
+
 
 
     };
