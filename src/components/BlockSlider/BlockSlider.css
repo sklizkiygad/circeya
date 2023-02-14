@@ -1,17 +1,19 @@
 
 .sticky-container__wrapper{
+
+}
+
+.sticky-container__wrapper>.main-block__heading{
     position: sticky;
-    top: 10%;
-    overflow: hidden;
+    top: 150px;
 }
 .sticky-container{
     display: flex;
     gap: 10px;
-
-    overflow: hidden;
+    position: sticky;
+    top: 250px;
     flex-wrap: nowrap;
     transform: translateX(250px);
-
 }
 
 

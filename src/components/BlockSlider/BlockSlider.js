@@ -17,6 +17,7 @@ const BlockSlider = () => {
     const scrollArea=useRef()
     const addScrollArea=useRef()
     const scrollContainer=useRef()
+    const scrollAreaHeading=useRef()
 
     const [heightScrollArea,setHeightScrollArea]=useState(0)
     const [bottomOfScrollArea,setBottomOfScrollArea]=useState(0)
@@ -35,9 +36,12 @@ const BlockSlider = () => {
     const handleScroll = () => {
 
 
-        if(windowYOffset>0 && window.pageYOffset >= windowYOffset && window.pageYOffset <= windowYOffset+heightScrollArea ){
-            scrollContainer.current.style.transform=`translateX(${1000-(window.pageYOffset-windowYOffset)}px)`
-            console.log(scrollArea.current.style.transform=`translateX(${-(window.pageYOffset-windowYOffset)/1000})`)
+        if(windowYOffset>0 && window.pageYOffset >= windowYOffset && window.pageYOffset <= windowYOffset+heightScrollArea + 500 ){
+            scrollContainer.current.style.transform=`translateX(${1000-((window.pageYOffset-windowYOffset)*2)}px)`
+            console.log(scrollArea.current.style.transform=`translateX(${-(window.pageYOffset-windowYOffset)/10})`)
+        }
+        else {
+                scrollAreaHeading.current.style.marginBottom=`${0}px`
         }
 
 
@@ -47,9 +51,9 @@ const BlockSlider = () => {
     const initParamsDiv=()=>{
 
         setHeightScrollArea(scrollArea.current.clientHeight)
-        addScrollArea.current.style.height=`${scrollArea.current.clientHeight+150}px`
-
-
+        console.log(windowYOffset)
+        // addScrollArea.current.style.height=`${scrollArea.current.clientHeight+150}px`
+        scrollArea.current.style.height=`${(scrollContainer.current.clientHeight*3)+100}px`
 
     }
 
@@ -63,6 +67,7 @@ const BlockSlider = () => {
 
         if(entries[0].isIntersecting){
             setWindowYOffset(window.pageYOffset)
+            scrollAreaHeading.current.style.marginBottom=`${scrollContainer.current.clientHeight+50}px`
         }
     }
 
@@ -80,7 +85,7 @@ const BlockSlider = () => {
     return (
 
             <div  ref={scrollArea} className="sticky-container__wrapper">
-                <h1 className='main-block__heading'>Lorem Ipsum</h1>
+                <h1 ref={scrollAreaHeading} className='main-block__heading'>Lorem Ipsum</h1>
                 <div ref={scrollContainer}  className="sticky-container" >
                     <div className='sticky-container__item'>
                         <img src={slide1} alt=""/>
@@ -108,9 +113,7 @@ const BlockSlider = () => {
                     </div>
 
                 </div>
-                <div ref={addScrollArea}>
 
-                </div>
             </div>
 
     );
