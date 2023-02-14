@@ -84,6 +84,9 @@ const BlockSlider = () => {
 
     return (
 
+
+
+
             <div  ref={scrollArea} className="sticky-container__wrapper">
                 <h1 ref={scrollAreaHeading} className='main-block__heading'>Lorem Ipsum</h1>
                 <div ref={scrollContainer}  className="sticky-container" >
